@@ -1,0 +1,1093 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <title>AlsSDK数据统计平台,让运营推广更高效,私有化部署统计平台让数据更安全!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="icon" href="/images/OPtitle.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/main.css">
+
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="static/js/toucher.js"></script>
+    <!-- <script type="text/javascript" src="static/js/index.js"></script>
+        <script type="text/javascript" src="static/js/tongji.js"></script>
+    -->
+    <!--[if lt IE 9]>
+<script src="static/js/html5shiv.min.js"></script>
+<![endif]-->
+    <meta name="keywords" content="AlsSDK,App安装来源追踪，App渠道推广统计">
+    <meta name="description"
+        content="AlsSDK是App安装来源追踪领域的开拓者,可实现免填邀请码、渠道码,无需渠道分包即可追踪App安装来源,渠道链接替代渠道打包。广泛应用渠道效果统计、地推统计等领域。">
+    <style>
+        .box-size:hover {
+            top: -16px;
+            -webkit-box-shadow: #dfdfdf 0 0 10px;
+            -moz-box-shadow: #dfdfdf 0 0 10px;
+            box-shadow: #dfdfdf 0 0 10px;
+            background: #fff
+        }
+
+        .box-size.free-box:hover {
+            background: url(static/images/free-index.png) no-repeat right top
+        }
+
+        .box-size:hover .caption>.protuct-title {
+            color: #4179ff
+        }
+
+        .box-size:hover .caption>.caption_h {
+            color: #999
+        }
+
+        .box-size {
+            height: 17rem;
+            margin: 30px 0;
+            border-radius: 5px;
+            border: 1px solid #eaeff3;
+            position: relative;
+            top: 0;
+            transition: all .8s;
+            padding: 0 10px
+        }
+
+        .free-box {
+            background: url(static/images/free-index.png) no-repeat right top
+        }
+
+        #bs-example-navbar-collapse-1 li>a:hover,
+        #scene>a:hover {
+            background: #475063;
+            color: #fff
+        }
+
+        .navbar-nav>li.ksss>a.register_aa {
+            background: 0 0;
+            border: 1px solid transparent
+        }
+
+        .navbar-nav>li.ksss>a.register_aa:hover {
+            background: #fff !important;
+            color: #000 !important
+        }
+
+        .youshi {
+            height: auto;
+            text-align: center
+        }
+
+        .youshi>.trait {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px
+        }
+
+        .youshi>p {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 5px;
+            line-height: 30px
+        }
+
+        .youshi>img {
+            margin: 30px 0
+        }
+
+        .intro_details p {
+            text-indent: 2em;
+            padding: 0 20px;
+            text-align: left;
+            color: #666;
+            font-size: 14px
+        }
+
+        .nav .open>a,
+        .nav .open>a:focus,
+        .nav .open>a:hover {
+            background: 0 0
+        }
+
+        .carousel-indicators li {
+            width: 35px;
+            height: 4px;
+            border-radius: 3px;
+            margin: 0 10px
+        }
+
+        .carousel-indicators .active {
+            width: 35px;
+            height: 4px;
+            background-color: #fff;
+            border: 1px solid #fff
+        }
+
+        .goodness {
+            float: left;
+            width: 50%;
+            text-align: center
+        }
+
+        .goodness>span {
+            color: #666;
+            font-size: 18px
+        }
+
+        .goodness>img {
+            vertical-align: middle
+        }
+
+        .carouselL {
+            display: none
+        }
+
+        a.left>img {
+            left: 50%
+        }
+
+        a.right>img {
+            right: 50%
+        }
+
+        .goodness_include {
+            background: #fcfcfc;
+            margin: 35px auto 40px;
+            height: auto;
+            line-height: 99px
+        }
+
+        .box-size>img {
+            margin-top: 50px
+        }
+
+        .tab-pane>p {
+            text-align: center;
+            height: 370px
+        }
+
+        .tab-pane>p>img {
+            margin: 60px auto 50px
+        }
+    </style>
+</head>
+
+<body style="padding-top:0;overflow-x:hidden">
+    <script>$(document).ready(function () { var i = location.href.toString(); $("div#bs-example-navbar-collapse-1 ul.last li").filter(function () { var s = $(this).find("a").attr("href"); try { s = $(this).find("a").attr("href").split(".")[0] } catch (s) { } return "/" == s ? !(0 <= i.indexOf("html")) : 0 <= i.indexOf(s) }).addClass("active"), $("li.dropdown").mouseover(function () { $(this).addClass("open") }).mouseout(function () { $(this).removeClass("open") }), $("#scene").mouseover(function () { $(".scenes_list").css("height", "230px").css("visibility", "visible"), $("#scene>a").css("color", "#42a0fd") }).mouseout(function () { $(".scenes_list").css("height", "0").css("visibility", "hidden"), $("#scene>a").css("color", "#fff") }), $(".scene_solution>table td").click(function () { $("#scene>a").css("background", "#475063") }), $("#product").mouseover(function () { $(".products_list").css("height", "180px").css("visibility", "visible"), $("#product>a").css("color", "#42a0fd") }).mouseout(function () { $(".products_list").css("height", "0").css("visibility", "hidden"), $("#product>a").css("color", "#fff") }) })</script>
+    <style>
+        .navbar-default .navbar-nav li>a {
+            color: #fff;
+            display: inline-block
+        }
+
+        #bs-example-navbar-collapse-1 li>a:hover,
+        #scene>a:hover {
+            background: 0 0;
+            color: #42a0fd
+        }
+
+        .navbar-nav>li.ksss>a.register_aa {
+            background: 0 0;
+            border: 1px solid transparent
+        }
+
+        .navbar-nav>li.ksss>a.register_aa:hover {
+            background: #fff !important;
+            color: #000 !important
+        }
+
+        .scene_solution>ul li {
+            float: left;
+            width: 33%;
+            padding: 15px 55px 10px 25px
+        }
+
+        .scene_product>ul li {
+            float: left;
+            width: 25%;
+            padding: 15px 0 0 20px
+        }
+
+        .scenes_txt {
+            float: left
+        }
+
+        .scenes_txt>p {
+            color: #fff;
+            font-size: 14px;
+            text-align: left
+        }
+
+        .scene_product>ul li:hover .scenes_txt>p:first-child,
+        .scene_solution>ul li:hover .scenes_txt>p:first-child {
+            color: #4179ff
+        }
+
+        .scene_product>ul li:hover .scenes_bg,
+        .scene_solution>ul li:hover .scenes_bg {
+            background: #313553
+        }
+
+        .scenes_txt>p.scene_mobile_txt {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #aaabb4
+        }
+
+        .care {
+            display: block
+        }
+
+        #bs-example-navbar-collapse-1 li.dropdown ul>li>a {
+            color: #666;
+            font-size: 16px
+        }
+
+        #bs-example-navbar-collapse-1 li.dropdown ul>li>a:hover {
+            color: #42a0fd !important
+        }
+
+        .products_list,
+        .scenes_list {
+            transition: height .3s;
+            transition-property: height;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            transition-delay: initial;
+            -webkit-transition: height .3s;
+            -moz-transition: height .3s;
+            background: rgba(0, 5, 42, .95);
+            box-shadow: 0 0 3px rgba(0, 0, 0, .05);
+            overflow: hidden;
+            width: 100%;
+            left: 0;
+            height: 0;
+            z-index: 1000;
+            visibility: hidden
+        }
+
+        .nav>li {
+            position: static;
+            display: block
+        }
+
+        .scenes_bg {
+            overflow: hidden;
+            padding: 10px 30px
+        }
+
+        .scene_solution>ul li.active {
+            background: 0 0
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent !important
+        }
+
+        #bs-example-navbar-collapse-1 li#btnGroup>ul>li a {
+            color: #fff;
+            background: 0 0;
+            width: 100%;
+            padding: 15px 0;
+            border-bottom: 1px solid #383e42;
+            font-size: 14px
+        }
+
+        #bs-example-navbar-collapse-1 li#btnGroup>ul>li a>img {
+            vertical-align: middle;
+            padding: 0 10px 0 20px
+        }
+
+        #bs-example-navbar-collapse-1 li#btnGroup>ul>li a:hover {
+            background: #262c30;
+            color: #fff !important
+        }
+
+        .navbar-default .navbar-nav>.open>a,
+        .navbar-default .navbar-nav>.open>a:focus,
+        .navbar-default .navbar-nav>.open>a:hover {
+            background-color: transparent;
+            color: #fff
+        }
+
+        #hearder-logo {
+            background: url(static/images/logo.svg) no-repeat;
+            width: 185px;
+            height: 38px;
+            margin-top: 16px;
+            overflow: hidden;
+            text-indent: -999em
+        }
+    </style>
+    <nav class="nav navbar-default navbar-fixed-top header" role="navigation">
+        <div style="position:relative;z-index:999;margin:0 auto;min-height:70px">
+            <div class="container">
+                <div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse" style="position:absolute;right:0"><span
+                            class="icon-bar"></span><span class="icon-bar"></span><span
+                            class="icon-bar"></span></button><a class="navbar-brand" href="/"
+                        id="hearder-logo">AlsSDK</a></div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav last navbar-right">
+                        <li><a href="/" rel="nofollow">首页</a></li>
+                        <li id="product" style="overflow:hidden" class="dropdown"><a class="product dropdown-toggle"
+                                href="javascript:;" style="background:0 0" data-toggle="dropdown"><span>产品</span><span
+                                    class="caret"></span></a>
+                            <div class="products_list dropdown-menu">
+                                <div class="container" style="overflow:hidden;padding:20px 0 0 0">
+                                    <div class="scene_solution">
+                                        <ul class="scene_solution_table" style="width:100%">
+                                            <li><a href="track.html">
+                                                    <div class="scenes_bg"><img src="static/picture/product_icon1.png"
+                                                            alt="可视化数据" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>可视化数据</p>
+                                                            <p class="scene_mobile_txt">为App的每次安装自定义不同参数，</p>
+                                                            <p style="margin-top:5px" class="scene_mobile_txt">
+                                                                从而达到无码邀请、场景还原等功能</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="channel.html">
+                                                    <div class="scenes_bg"><img src="static/picture/product_icon2.png"
+                                                            alt="渠道统计" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>渠道统计</p>
+                                                            <p class="scene_mobile_txt">仅凭极致灵活创建的渠道链接精确</p>
+                                                            <p style="margin-top:5px" class="scene_mobile_txt">
+                                                                统计任意渠道效果（兼容iOS/安卓）</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="wakeup.html">
+                                                    <div class="scenes_bg"><img src="static/picture/product_icon3.png"
+                                                            alt="快速安装与私有化部署" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>快速安装与私有化部署 <img src="static/picture/free-solution.png"
+                                                                    alt="私有化部署" class="hidden-xs"></p>
+                                                            <p class="scene_mobile_txt">全程接管APP安装流程，兼容各种</p>
+                                                            <p style="margin-top:5px" class="scene_mobile_txt">
+                                                                社交平台，大幅提升安装概率</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="scene" style="overflow:hidden" class="dropdown"><a class="scenes dropdown-toggle"
+                                href="javascript:;" data-toggle="dropdown" style="background:0 0">场景<span
+                                    class="caret"></span></a>
+                            <div class="scenes_list dropdown-menu">
+                                <div class="container" style="overflow:hidden;padding:20px 0 0 0">
+                                    <div class="scene_product">
+                                        <ul class="scene_solution_table" style="width:100%">
+                                            <li><a href="invitation.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon1.png"
+                                                            alt="跨平台统计SDK" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>跨平台统计SDK</p>
+                                                            <p class="scene_mobile_txt">告别邀请码,自动匹配邀请关系</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="tracking.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon2.png"
+                                                            alt="移动广告效果统计" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>移动广告效果统计</p>
+                                                            <p class="scene_mobile_txt">统计广告效果、优化投放策略</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="installation.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon3.png"
+                                                            alt="安装后自动加好友" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>安装后自动加好友</p>
+                                                            <p class="scene_mobile_txt">自带社交关系，提高留存率</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="directInstall.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon4.png"
+                                                            alt="私有化部署" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>直接下载 <img src="static/picture/free-solution.png"
+                                                                    alt="私有化部署" class="hidden-xs"></p>
+                                                            <p class="scene_mobile_txt">微信等社交平台中直接下载</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="share.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon5.png"
+                                                            alt="社交分享效果统计" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>社交分享效果统计</p>
+                                                            <p class="scene_mobile_txt">精准统计安装量及后续行为</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="cpsChannel.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon6.png"
+                                                            alt="CPS渠道统计" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>CPS渠道统计</p>
+                                                            <p class="scene_mobile_txt">为分成结算提供数据依据</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="promotion.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon7.png"
+                                                            alt="地推统计" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>地推统计</p>
+                                                            <p class="scene_mobile_txt">极简流程，轻松统计海量地推</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="pullUp.html">
+                                                    <div class="scenes_bg"><img src="static/picture/scene_icon8.png"
+                                                            alt="私有化部署" style="float:left;margin-right:10px">
+                                                        <div class="scenes_txt">
+                                                            <p>私有化部署 <img src="static/picture/free-solution.png"
+                                                                    alt="私有化部署" class="hidden-xs"></p>
+                                                            <p class="scene_mobile_txt">从App外部一键拉起,直达场景</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="price.html">价格</a></li>
+                        <li><a href="doc/index.html" target="_blank">文档</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li class="ksss" id="btnGroup" style="position:relative"><a
+                                href="http://developer.AlsSDK.io/" target="_blank" class="register_aa"
+                                rel="nofollow">控制台</a><a class="register_a register_aa"
+                                href="http://developer.AlsSDK.io/register.html" target="_blank"
+                                rel="nofollow">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="lanren hidden-xs"><a href="javascript:void(0);" rel="nofollow" id="AlsSDKdom" class="slide_min">
+            <div class="slide_min"></div>
+        </a></div> -->
+    <!-- <script>!function () { var n = !1, o = $(".header"); function e() { o[70 < window.scrollY || n ? "addClass" : "removeClass"]("scrolledDown") } o.mouseenter(function () { n = !0, e() }).mouseleave(function () { n = !1, e() }), $(document).scroll(function () { e() }), e() }()</script>
+    <script id="qd28521391756e47cb86af41c569993e00d72020cd44" src="static/js/551893d75693473a83dc75ae809ae745.js"
+        charset="utf-8" async defer="defer"></script> -->
+    <div class="pro_banner">
+        <div id="myCarousel" class="carousel slide both" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="idy warp warp_banner1">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-7 col-xs-12">
+                                        <div class="warp_title">跨平台统计SDK</div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">亿万用户有奖邀请，免填邀请码情况下自动精确匹配邀请关系
+                                        </div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">可以视亿万用户为独立CPS渠道，灵活开展营销活动
+                                        </div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">亿级用户大规模商用情况下的高精度和高可靠性</div>
+                                        <div class="warp_left"><a href="//developer.AlsSDK.io/" target="_blank"
+                                                class="anniua">立即使用</a><a href="invitation.html"
+                                                class="anniua anniua1">查看详情</a></div>
+                                    </div>
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="right-mask-banner"><img src="static/picture/222.png" alt="跨平台统计SDK">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-7 col-xs-12">
+                                        <div class="warp_title">可视化数据</div>
+                                        <div class="warp_titx warp_titx_parameter">
+                                            为App的每一次安装自定义不同的初始化参数，从而达到无码邀请、场景还原等功能，原理如右图。</div>
+                                        <div class="warp_left"><a href="//developer.AlsSDK.io/" target="_blank"
+                                                class="anniua">立即使用</a><a href="track.html#pull_scene"
+                                                class="anniua trackDemo anniua1">体验DEMO</a></div>
+                                    </div>
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="right-mask-banner"><img src="static/picture/track.png" alt="可视化数据">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp warp_banner2">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-12">
+                                        <div class="warp_title">为运营提供决策方案</div>
+                                        <div class="warp_titx warp_titx_deep">
+                                            实现web页面到App间的无缝跳转，帮助App解决拉新、拉活、留存、转化等问题，直达场景页面，结合AlsSDK的精准安装来源追踪技术，更可实现多平台统计SDK和免打包渠道统计等功能
+                                        </div>
+                                        <div class="warp_left"><a href="deeplinking.html"
+                                                class="anniua anniua1">查看详情</a></div>
+                                    </div>
+                                    <div class="col-sm-4 hidden-xs">
+                                        <div class="right-mask-banner"><img src="static/picture/deep-banner.png"
+                                                alt="深度链接Deeplinking解决方案"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp warp_banner3">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-7 col-xs-12">
+                                        <div class="warp_title">渠道统计</div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">免打包渠道统计技术，10分钟快速集成</div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point"
+                                                style="margin-right:10px">仅凭渠道链接即可精确统计任意渠道效果（兼容iOS/安卓）</div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">完美支持广告效果统计、地推统计等等</div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">独创实时报表、实时排重，第一时间洞明渠道状况
+                                        </div>
+                                        <div class="warp_left"><a href="//developer.AlsSDK.io/" target="_blank"
+                                                class="anniua">立即使用</a><a
+                                                href="https://developer-demo.AlsSDK.io/p-227984334-932/channel-effect.html"
+                                                target="_blank" class="anniua trackDemo anniua1">查看演示</a></div>
+                                    </div>
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="right-mask-banner"><img src="static/picture/channel-banner.png"
+                                                alt="渠道统计"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp warp_banner_quick">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12 wakeup1">
+                                        <div class="warp_title">快速安装与私有化部署 <img src="static/picture/free-jump.png"
+                                                alt="私有化部署" class="hidden-xs" style="vertical-align:top"></div>
+                                        <div class="warp_titx">全程接管App安装流程，兼容各种社交平台，大幅提升安装概率</div>
+                                        <div class="warp_left"><a href="//developer.AlsSDK.io/" target="_blank"
+                                                class="anniua">立即使用</a><a href="wakeup.html#trackDemo" target="_blank"
+                                                class="anniua trackDemo anniua1">体验DEMO</a></div>
+                                    </div>
+                                    <div class="col-sm-2 hidden-xs hidden-sm" style="top:155px">
+                                        <div class="right-mask-banner"><img src="static/picture/hand.png"
+                                                alt="快速安装与私有化部署" style="max-width:none"></div>
+                                    </div>
+                                    <div class="col-sm-4 hidden-xs wakeup2">
+                                        <div class="right-mask-banner" style="text-align:right"><img
+                                                src="static/picture/wakeup-banner.png" alt="快速安装与私有化部署"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp warp_banner5">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-7 col-xs-12">
+                                        <div class="warp_title">先进地推统计方案<p>——地推活动考核、管理、奖惩的精确依据</p>
+                                        </div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">人手一个地推二维码，精确统计百万地推人员业绩
+                                        </div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">用户安装后0操作（无须填写地推码），效率倍增
+                                        </div>
+                                        <div class="warp_titx"><img src="static/picture/banner2-1.png"
+                                                alt="banner_point" style="margin-right:10px">实时报表，实时排重，精确到无惧开放个人报表给地推人员
+                                        </div>
+                                        <div class="warp_left"><a href="promotion.html" class="anniua">查看详情</a><a
+                                                href="https://developer-demo.AlsSDK.io/p-227984334-932/channel-effect.html"
+                                                target="_blank" class="anniua trackDemo anniua1">查看演示</a></div>
+                                    </div>
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="right-mask-banner"><img src="static/picture/777.png" alt="先进地推统计方案">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="idy warp warp_banner6">
+                        <div class="container">
+                            <div class="middle-container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div style="text-align:center">
+                                            <div class="warp_title"><img src="static/picture/effect-point.png"
+                                                    alt="自定义效果点" class="img-responsive" style="margin:0 auto"></div>
+                                            <div class="warp_titx warp_titx_point">最优秀的渠道统计工具，不能少了对渠道进行评估的功能</div>
+                                            <div class="warp_titx warp_titx_point">
+                                                AlsSDK自定义渠道效果点统计功能，让你灵活扩展渠道统计维度，为渠道价值的评估与分析提供支持</div>
+                                            <div class="warp_left"><a href="effect_point.html" target="_blank"
+                                                    class="anniua"
+                                                    style="background:#34c8ac;color:#fff;border:none">查看详情</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carouselL"><a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"
+                    id="carleft"><img src="static/picture/bannerleft.png" alt="AlsSDK"
+                        style="position:absolute;top:50%" class="img-responsive"></a><a class="right carousel-control"
+                    href="#myCarousel" role="button" data-slide="next" id="carright"><img
+                        src="static/picture/bannerright.png" alt="AlsSDK" style="position:absolute;top:50%"
+                        class="img-responsive"></a></div>
+        </div>
+    </div>
+    <div>
+        <div style="height:auto;background:#fff">
+            <div class="container">
+                <div style="text-align:center">
+                    <h1 class="title_portant">AlsSDK——App推广技术开拓者</h1>
+                </div>
+            </div>
+            <div style="margin-bottom:50px">
+                <div class="goodness_include">
+                    <div class="container">
+                        <ul style="width:100%;overflow:hidden">
+                            <li class="goodness"><img src="static/picture/good1.png" alt="AlsSDK优势"
+                                    class="hidden-xs"><span>让App下载更快更直接，推广渠道效果统计更灵活简单</span></li>
+                            <li class="goodness"><img src="static/picture/good3.png" alt="AlsSDK优势"
+                                    class="hidden-xs"><span>让App拉新流程更简更优，用户病毒式传播更简单高效</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <ul class="index_table">
+                        <li class="col-md-3"><a href="invitation.html">
+                                <div class="box-size"><img src="static/picture/ge_icon1.png" alt="多平台统计SDK">
+                                    <div class="caption">
+                                        <p class="protuct-title">跨平台统计SDK</p>
+                                        <p class="caption_h">支持多平台,快速接入统计更给力</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="tracking.html">
+                                <div class="box-size"><img src="static/picture/ge_icon2.png" alt="移动广告效果统计">
+                                    <div class="caption">
+                                        <p class="protuct-title">多应用数据统计</p>
+                                        <p class="caption_h">简单、灵活、上手快，提供实时数据与应用横向比较</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="installation.html">
+                                <div class="box-size free-box"><img src="static/picture/ge_icon3.png" alt="安装后自动加好友">
+                                    <div class="caption">
+                                        <p class="protuct-title">用户留存分析</p>
+                                        <p class="caption_h">提供关于留存的详尽分析，保护用户资产</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="directInstall.html">
+                                <div class="box-size free-box"><img src="static/picture/ge_icon4.png" alt="一键加入游戏房间">
+                                    <div class="caption">
+                                        <p class="protuct-title">数据导出下载</p>
+                                        <p class="caption_h">提供应用数据excel报表，随时获取数据情报</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="share.html">
+                                <div class="box-size"><img src="static/picture/ge_icon5.png" alt="社交分享效果统计">
+                                    <div class="caption">
+                                        <p class="protuct-title">自定义事件统计</p>
+                                        <p class="caption_h">使用自定义事件定义任何需要关注的转化率,满足个性化需求</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="cpsChannel.html">
+                                <div class="box-size free-box"><img src="static/picture/ge_icon6.png" alt="CPS渠道效果统计">
+                                    <div class="caption">
+                                        <p class="protuct-title">渠道管理统计</p>
+                                        <p class="caption_h">精准统计，鉴别有效渠道，控制营销成本</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="promotion.html">
+                                <div class="box-size free-box"><img src="static/picture/ge_icon7.png" alt="地推统计">
+                                    <div class="caption">
+                                        <p class="protuct-title">IP地区统计</p>
+                                        <p class="caption_h">使用标签区分客户，为精准营销提供基础</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="col-md-3"><a href="pullUp.html">
+                                <div class="box-size "><img src="static/picture/ge_icon8.png" alt="私有化部署">
+                                    <div class="caption">
+                                        <p class="protuct-title">私有化部署</p>
+                                        <p class="caption_h">支持角色权限管理,数据驱动营销闭环，助力企业实现业务增</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div
+        style="height:auto;background-color:#343556;width:100%;background-image:url(static/images/youshi.png);background-size:cover">
+        <div class="container">
+            <ul style="width:100%;padding:30px 0 50px;overflow:hidden">
+                <li class="col-md-3 col-xs-6 youshi"><img src="static/picture/safe1.png" alt="AlsSDK优势">
+                    <p class="trait">可视化</p>
+                    <p>多维度可视化分析，实时</p>
+                    <p>洞察增长数据</p>
+                </li>
+                <li class="col-md-3 col-xs-6 youshi"><img src="static/picture/safe2.png" alt="AlsSDK优势">
+                    <p class="trait">简洁</p>
+                    <p>轻松收集数据</p>
+                    <p>跨平台sdk小</p>
+                </li>
+                <li class="col-md-3 col-xs-6 youshi"><img src="static/picture/safe3.png" alt="AlsSDK优势">
+                    <p style="margin-bottom:18px" class="trait">稳定</p>
+                    <p>累计<span style="font-size:24px;color:#fff">1000+</span>安装次数，</p>
+                    <p>让企业用户更信任</p>
+                </li>
+                <li class="col-md-3 col-xs-6 youshi"><img src="static/picture/safe4.png" alt="AlsSDK优势">
+                    <p class="trait">安全</p>
+                    <p class="trait_safe">非侵入式api设计</p>
+                    <p>私有化部署业务数据</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="centerbox clearfix" style="text-align:center;margin-top:20px">
+        <p class="title_portant">他们正在使用</p>
+        <p style="color:#444c55" class="little-title">诚信企业&nbsp;&nbsp;卓越功能&nbsp;&nbsp;可靠服务</p>
+    </div>
+    <div class="container">
+        <div class="special-user">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#choice" data-toggle="tab">典型客户</a></li>
+                <li><a href="#game" data-toggle="tab">游戏</a></li>
+                <li><a href="#news" data-toggle="tab">新闻阅读</a></li>
+                <li><a href="#live" data-toggle="tab">社交娱乐</a></li>
+                <li><a href="#education" data-toggle="tab">教育</a></li>
+                <li><a href="#medical" data-toggle="tab">健康医疗</a></li>
+                <li><a href="#banking" data-toggle="tab">金融</a></li>
+                <li><a href="#online" data-toggle="tab">电商</a></li>
+                <li><a href="#blockchain" data-toggle="tab">旅游出行</a></li>
+            </ul>
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="choice">
+                <p><img class="img_banner" src="static/picture/choice.png" alt="AlsSDK典型客户"
+                        style="margin:50px auto"></p>
+            </div>
+            <div class="tab-pane fade" id="game">
+                <p><img class="img_banner" src="static/picture/game.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="news">
+                <p><img class="img_banner" src="static/picture/news.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="live">
+                <p><img class="img_banner" src="static/picture/live.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="education">
+                <p><img class="img_banner" src="static/picture/education.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="medical">
+                <p><img class="img_banner" src="static/picture/medical.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="banking">
+                <p><img class="img_banner" src="static/picture/banking.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="online">
+                <p><img class="img_banner" src="static/picture/online.png" alt="AlsSDK典型客户"></p>
+            </div>
+            <div class="tab-pane fade" id="blockchain">
+                <p><img class="img_banner" src="static/picture/tourist.png" alt="AlsSDK典型客户"></p>
+            </div>
+        </div>
+    </div>
+    <div style="height:auto;width:100%;background:#fcfcfc;border-top:1px solid #e5e5e5">
+        <div class="container" style="text-align:center">
+            <p class="title_portant">适配多种平台</p>
+            <p style="color:#444c55;font-size:16px;margin-top:20px">web,h5,小程序,cocos,apicloud,快速上报数据</p>
+            <div>
+                <ul class="plarform_list">
+                    <li><a href="/doc/android_sdk.html" target="_blank"><img src="static/picture/android.png"
+                                alt="AlsSDK" class="hidden-xs"> <img src="static/picture/android1.png"
+                                alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="/doc/ios_sdk.html" target="_blank"><img src="static/picture/ios.png" alt="AlsSDK"
+                                class="hidden-xs"> <img src="static/picture/ios1.png" alt="AlsSDK"
+                                style="display:none"></a></li>
+                    <li><a href="https://www.npmjs.com/package/cordova-plugin-AlsSDK" target="_blank"><img
+                                src="static/picture/cordova.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/cordova1.png" alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="https://github.com/AlsSDK/AlsSDK-hbuilder-sdk" target="_blank"><img
+                                src="static/picture/dcloud.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/dcloud1.png" alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="https://docs.apicloud.com/Client-API/Open-SDK/AlsSDK" target="_blank"><img
+                                src="static/picture/apicloud.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/apicloud1.png" alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="https://github.com/AlsSDK/AlsSDK-cocos2dx-sdk" target="_blank"><img
+                                src="static/picture/cocos2d.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/cocos2d1.png" alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="https://github.com/AlsSDK/AlsSDK-unity-sdk" target="_blank"><img
+                                src="static/picture/unity3d.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/unity3d1.png" alt="AlsSDK" style="display:none"></a></li>
+                    <li><a href="https://www.npmjs.com/package/AlsSDK-react-native" target="_blank"><img
+                                src="static/picture/reactnative.png" alt="AlsSDK" class="hidden-xs"> <img
+                                src="static/picture/reactnative1.png" alt="AlsSDK" style="display:none"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        .main-bottom {
+            padding: 40px 0 20px;
+            overflow: hidden;
+            display: block;
+            color: #41519f
+        }
+
+        .content-homeBottom {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden
+        }
+
+        .content-homeBottom .bottom-left {
+            float: left;
+            display: block
+        }
+
+        .bottom-right ul {
+            margin-right: 20px;
+            display: block
+        }
+
+        .copyright-bottom {
+            clear: both;
+            display: block;
+            text-align: left;
+            font-size: 12px;
+            border-top: 1px solid #393e41;
+            padding: 20px 0 20px 15px
+        }
+
+        .bottom-left ul {
+            float: left;
+            margin: 0 0 20px;
+            zoom: 1;
+            padding: 0 70px
+        }
+
+        .bottom-left ul p {
+            display: block;
+            font-weight: 400;
+            padding-bottom: 26px
+        }
+
+        .bottom-left ul p a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px
+        }
+
+        .bottom-left ul li {
+            list-style: none;
+            display: block;
+            clear: both;
+            line-height: 30px;
+            font-size: 14px
+        }
+
+        .bottom-left ul li a {
+            color: #9499a4;
+            text-decoration: none
+        }
+
+        .bottom-left ul li a:hover {
+            color: #fff
+        }
+
+        .bottom-right img {
+            float: right
+        }
+
+        .copyright-bottom span {
+            clear: both;
+            display: block;
+            color: #9499a4
+        }
+
+        .copyright-bottom span a {
+            color: #9499a4;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 6px 5px;
+            display: inline-block
+        }
+
+        .copyright-bottom span a:hover {
+            color: #fff
+        }
+
+        .food-title {
+            margin: -20px auto 40px;
+            border-bottom: 1px solid #484d58;
+            padding: 0 0 20px 20px;
+            overflow: hidden
+        }
+
+        .food-title>span {
+            color: #9499a4;
+            font-size: 16px
+        }
+
+        .food-title>img {
+            margin-right: 55px;
+            vertical-align: middle;
+            width: 149px;
+            height: 34px
+        }
+
+        .friendLine li>a {
+            text-align: center;
+            color: #9499a4;
+            font-size: 16px
+        }
+
+        .friendLine>li {
+            float: left;
+            margin: 20px 20px 0
+        }
+
+        .friendLine>li>a:hover {
+            color: #fff
+        }
+
+        @media screen and (max-width:1200px) {
+            .bottom-left ul {
+                padding-left: 20px;
+                width: 50%
+            }
+        }
+    </style>
+    <div style="width:100%;background:#3e434f">
+        <div class="main-bottom container">
+            <div class="food-title"><img src="static/picture/logo.svg" alt="AlsSDK"><span>跨平台运营统计sdk</span></div>
+            <div class="content-homeBottom">
+                <div class="bottom-left">
+                    <div class="bottom-box">
+                        <ul style="padding-left:20px" class="bottom-list">
+                            <p><a href="javascript:;" style="cursor:default" rel="nofollow">开发者</a></p>
+                            <li><a href="download.html">SDK下载</a></li>
+                            <li><a href="doc/index.html" target="_blank">文档</a></li>
+                        </ul>
+                        <ul class="bottom-list">
+                            <p><a href="javascript:;" style="cursor:default" rel="nofollow">关于</a></p>
+                            <li><a href="about.html" rel="nofollow">关于AlsSDK</a></li>
+                            <li><a href="tiaokuan.html" rel="nofollow">服务条款</a></li>
+                            <li><a href="yinsi.html" rel="nofollow">隐私政策</a></li>
+                        </ul>
+                        <ul>
+                            <p><a href="javascript:;" style="cursor:default" rel="nofollow">联系我们</a></p>
+                            <li><a href="javascript:;" style="cursor:default" rel="nofollow">业务咨询QQ：10011000</a></li>
+                            <li><a href="javascript:;" style="cursor:default" rel="nofollow">服务热线：0755-22726026</a></li>
+                            <li><a href="javascript:;" style="cursor:default"
+                                    rel="nofollow">邮箱联系：appAlsSDK@gmail.com</a></li>
+                            <li><a href="javascript:;" style="cursor:default"
+                                    rel="nofollow">公司地址：深圳市福田区车公庙泰然六路苍松大厦北座13A05</a></li>
+                        </ul>
+                        <ul>
+                            <p><a href="javascript:;" style="cursor:default" rel="nofollow">微信咨询</a></p>
+                            <li><img src="static/picture/wechat.jpeg" alt="AlsSDK微信咨询"
+                                    style="width:120px;height:120px"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top:1px solid #484d58" class="hidden-xs">
+                <div style="color:#fff;font-size:16px;margin:40px 20px 0;float:left">友情链接</div>
+                <ul style="overflow:hidden;margin:20px auto 10px" class="friendLine">
+                    <tr>
+                        <li><a href="https://www.upyun.com/" target="_blank">又拍云</a></li>
+                        <li><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>
+                        <li><a href="http://www.woshipm.com/" target="_blank">人人都是产品经理</a></li>
+                        <li><a href="http://www.cocoachina.com/" target="_blank">CocoaChina</a></li>
+                        <li><a href="https://www.jianshu.com/" target="_blank">简书</a></li>
+                        <li><a href="https://segmentfault.com/" target="_blank">SegmentFault</a></li>
+                        <li><a href="http://www.apkbus.com/" target="_blank">安卓巴士</a></li>
+                        <li><a href="http://www.code4app.com/" target="_blank">iOS开发-Code4app</a></li>
+                        <li><a href="http://www.anzhi.com/" target="_blank">安智网</a></li>
+                        <li><a href="http://www.easemob.com/" target="_blank">环信</a></li>
+                        <li><a href="http://www.iyunying.org/" target="_blank">爱运营</a></li>
+                        <li><a href="http://www.chaojibiaoge.com/" target="_blank">超级表格</a></li>
+                        <li><a href="https://www.meijiexia.com/" target="_blank">媒介匣</a></li>
+                        <li><a href="https://www.proginn.com/" target="_blank">程序员客栈</a></li>
+                    </tr>
+                </ul>
+            </div>
+        </div>
+        <div style="background:#383d49">
+            <div class="copyright-bottom container"><span>深圳市分秒网络科技有限公司 All Rights Reserved<a
+                        href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">粤ICP备16073226号-8</a></span>
+            </div>
+        </div>
+    </div>
+ <script>
+ 
+ $("#carousel2").carousel({ pause: !0, interval: !1 }), $(".trackDemo").click(function () { return $("html, body").animate({ scrollTop: $($.attr(this, "href")).offset().top }, 700), !1 }), $("#myCarousel").mouseover(function () { $(".carouselL").show() }).mouseout(function () { $(".carouselL").hide() }); 
+ 
+ //var myTouch = util.toucher(document.getElementById("myCarousel")); myTouch.on("swipeLeft", function (o) { $("#carright").click() }).on("swipeRight", function (o) { $("#carleft").click() }), $(".plarform_list li").mouseover(function () { $(this).find("img").toggle() }).mouseout(function () { $(this).find("img").toggle() })
+ 
+ </script>
+    
+    </body>
+
+</html>
